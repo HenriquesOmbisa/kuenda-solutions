@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Logo } from './Logo'
 import { Facebook, Mail, Phone, MapPin, Linkedin } from 'lucide-react'
+import Link from 'next/link'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -65,12 +66,12 @@ export function Footer() {
                 { name: 'Contacto', href: '/contacto' }
               ].map((item) => (
                 <li key={item.name}>
-                  <a
+                  <Link
                     href={item.href}
                     className="text-gray-300 hover:text-white transition-colors"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
