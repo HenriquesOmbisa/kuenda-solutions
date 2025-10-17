@@ -3,8 +3,7 @@
 
 import { motion } from 'framer-motion'
 import { Logo } from './Logo'
-import { Facebook, Instagram, Mail, Phone, MapPin, Linkedin } from 'lucide-react'
-import { BsLinkedin } from 'react-icons/bs'
+import { Facebook, Mail, Phone, MapPin, Linkedin } from 'lucide-react'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()

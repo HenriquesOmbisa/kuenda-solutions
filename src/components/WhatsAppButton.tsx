@@ -1,5 +1,4 @@
 // components/WhatsAppButton.tsx
-import { Phone } from 'lucide-react'
 import { Product } from '@/types/product'
 import { CartItem } from '@/store/cart-store'
 import { Button } from '@/components/ui/button'

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 // components/Cart.tsx
 'use client'
 
