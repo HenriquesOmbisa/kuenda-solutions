@@ -1,4 +1,3 @@
-// components/Footer.tsx
 'use client'
 
 import { motion } from 'framer-motion'
@@ -26,7 +25,7 @@ export function Footer() {
               de consumíveis de escritório, equipamentos informáticos, equipamentos de 
               proteção e segurança, e serviços gráficos.
             </p>
-            
+
             {/* Social Links */}
             <div className="flex space-x-4 mt-6">
               <motion.a
@@ -38,7 +37,9 @@ export function Footer() {
                 <Facebook size={20} />
               </motion.a>
               <motion.a
-                href="#"
+                href="https://www.linkedin.com/in/henriques-ombisa/"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-300 hover:text-white hover:bg-indigo-600 transition-colors"
@@ -102,7 +103,7 @@ export function Footer() {
             </div>
           </motion.div>
         </div>
-        
+
         {/* Bottom Bar */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -113,6 +114,24 @@ export function Footer() {
         >
           <p>&copy; {currentYear} Kuenda Solutions. Todos os direitos reservados.</p>
           <p className="text-sm mt-2">NIF: 5002528525</p>
+
+          {/* Creative credit line */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.6 }}
+            className="mt-6 text-sm font-light text-gray-500"
+          >
+            Feito com <span className="text-red-500">💓</span> por{' '}
+            <a
+              href="https://henriquesombisa.github.io/portifolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-300 hover:text-indigo-300 transition-colors font-light"
+            >
+              henriquesOmbisa
+            </a>
+          </motion.div>
         </motion.div>
       </div>
     </footer>
