@@ -129,7 +129,7 @@ export function ProductCard({ product }: ProductCardProps) {
       </DialogTrigger>
 
       {/* Product Detail Dialog */}
-      <DialogContent className="max-w-[95vw] md:max-w-4xl mx-2 rounded-xl">
+      <DialogContent className="max-w-[95vw] md:max-w-4xl mx-auto rounded-xl">
         <DialogTitle className="sr-only">Detalhes do Produto</DialogTitle>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {/* Product Image */}
@@ -177,7 +177,7 @@ export function ProductCard({ product }: ProductCardProps) {
                   })
                   setDialogOpen(false)
                 }}
-                className="flex-1 flex items-center justify-center gap-2 h-12 text-sm md:text-base"
+                className="flex-1 flex items-center justify-center gap-2 py-3 text-sm md:text-base"
                 size="lg"
               >
                 <ShoppingCart size={18} />

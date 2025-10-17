@@ -94,7 +94,7 @@ export function Navbar() {
                     <Logo variant="dark" />
                     <button 
                       onClick={() => setMobileMenuOpen(false)}
-                      className="text-slate-700"
+                      className="text-slate-700 hidden"
                     >
                       <X size={24} />
                     </button>
